@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Direct child selector ></title>
+        <meta charset="utf-8"/>
+        <meta name="keywords" content="........" />
+        <meta name="description" content="/..........." />
+    </head>
+    <style>
+        div.grandparent{
+            color: blueviolet;
+            font-size: 5em;
+            border: 5px dashed rgb(182, 182, 15);
+        }
+        div.grandparent > div.parent{
+            color: red;
+            font-size: 3em;
+            border:3px dashed black;
+        }
+        div.grandparent > div.parent > div.child{
+            color: green;
+            border:5px dashed red;
+        }
+    </style>
+    <body>
+        <div class="grandparent">
+            grandparent
+            <div class="parent">
+                parent
+                <div class="child">
+                    child
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
